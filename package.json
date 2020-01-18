@@ -1,6 +1,6 @@
 {
   "name": "bulma-block-list",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A simple scss package extending Bulma with block style list elements",
   "homepage": "https://github.com/chrisrhymes/bulma-block-list#readme",
   "bugs": {
@@ -8,7 +8,7 @@
   },
   "main": "src/block-list.scss",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url src/block-list.scss docs/block-list.css",
+    "css-build": "node-sass --omit-source-map-url src/demo.scss docs/demo.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
   },
@@ -20,8 +20,10 @@
   ],
   "author": "chrisrhymes",
   "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.8.0"
+  },
   "devDependencies": {
-    "bulma": "^0.8.0",
     "node-sass": "^4.9.2"
   }
 }
