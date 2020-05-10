@@ -1,0 +1,13 @@
+---
+---
+
+.content {
+  ul.block-list {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+$primary: hsl(171, 100%, 41%);
+
+// Import Main CSS file from theme
+@import "main";
