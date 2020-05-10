@@ -19,6 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/bulma-block-list" # the subpath of your site, e.g. /blog
 url: "https://www.csrhymes.com"
 gh_sponsor: chrisrhymes
+favicon: /favicon.ico
 
 remote_theme: chrisrhymes/bulma-clean-theme
 
