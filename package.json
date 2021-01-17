@@ -1,6 +1,6 @@
 {
   "name": "bulma-block-list",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A simple scss package extending Bulma with block style list elements",
   "homepage": "https://github.com/chrisrhymes/bulma-block-list#readme",
   "bugs": {

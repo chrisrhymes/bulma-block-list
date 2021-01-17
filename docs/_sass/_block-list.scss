@@ -67,6 +67,12 @@ $block-list-highlight-width: 5px !default;
         border: 1px solid $color;
     }
 
+    li.is-outlined,
+    &.is-outlined > li {
+        @include outlined($border);
+        color: $text;
+    }
+
     @each $name, $pair in $colors {
 
         $color: nth($pair, 1);
