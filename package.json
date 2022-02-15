@@ -7,11 +7,7 @@
     "url": "https://github.com/chrisrhymes/bulma-block-list/issues"
   },
   "main": "src/block-list.scss",
-  "scripts": {
-    "css-build": "node-sass --omit-source-map-url src/demo.scss docs/demo.css",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
-  },
+  "scripts": {},
   "keywords": [
     "Bulma",
     "List",
@@ -22,8 +18,5 @@
   "license": "MIT",
   "dependencies": {
     "bulma": "^0.9.3"
-  },
-  "devDependencies": {
-    "node-sass": "^4.14.1"
   }
 }
