@@ -1,4 +1,5 @@
 @charset "utf-8";
+@use "sass:math";
 
 $block-list-separator: 0.25rem !default;
 $block-list-highlight-width: 5px !default;
@@ -14,7 +15,7 @@ $block-list-highlight-width: 5px !default;
     list-style: none;
 
     li {
-        padding: ($gap / 2);
+        padding: math.div($gap, 2);
         background: $light;
         margin-bottom: $block-list-separator;
     }
@@ -38,7 +39,7 @@ $block-list-highlight-width: 5px !default;
     li.is-small,
     &.is-small > li {
         font-size: $small-font-size;
-        padding: ($gap / 3);
+        padding: math.div($gap, 3);
     }
 
     li.is-normal,
