@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-@use "sass:math";
+@use 'sass:math';
 
-@import "bulma/sass/utilities/initial-variables.scss";
-@import "bulma/sass/utilities/derived-variables.scss";
+@use 'bulma/sass/utilities/initial-variables.scss';
+@use 'bulma/sass/utilities/derived-variables.scss';
 
 $block-list-separator: 0.25rem !default;
 $block-list-highlight-width: 5px !default;
@@ -19,7 +19,7 @@ $block-list-highlight-width: 5px !default;
   list-style: none;
 
   li {
-    padding: math.div($gap, 2);
+    padding: math.div(initial-variables.$gap, 2);
     background: var(--bulma-body-background-color);
     margin-bottom: $block-list-separator;
   }
@@ -41,23 +41,23 @@ $block-list-highlight-width: 5px !default;
 
   li.is-small,
   &.is-small > li {
-    font-size: $size-7;
-    padding: math.div($gap, 3);
+    font-size: initial-variables.$size-7;
+    padding: math.div(initial-variables.$gap, 3);
   }
 
   li.is-normal,
   &.is-normal > li {
-    font-size: $size-6;
+    font-size: initial-variables.$size-6;
   }
 
   li.is-large,
   &.is-large > li {
-    font-size: $size-5;
+    font-size: initial-variables.$size-5;
   }
 
   li.has-radius,
   &.has-radius > li {
-    border-radius: $radius;
+    border-radius: initial-variables.$radius;
   }
 
   li.is-highlighted,
@@ -73,7 +73,7 @@ $block-list-highlight-width: 5px !default;
 
   li.is-outlined,
   &.is-outlined > li {
-    @include outlined("light");
+    @include outlined('light');
   }
 
   li.has-icon {
@@ -98,7 +98,7 @@ $block-list-highlight-width: 5px !default;
     }
   }
 
-  @each $name, $pair in $colors {
+  @each $name, $pair in derived-variables.$colors {
     li.is-#{$name},
     &.is-#{$name} > li {
       background: var(--bulma-#{$name});
